@@ -1,0 +1,24 @@
+{
+    "qna":[
+        {
+            "questionNumber":1,
+            "question":"What is your name?",
+            "answer":"Thej",
+            "answerOptions":[
+                "Thej",
+                "Batman",
+                "Bruce"
+            ]
+        },
+        {
+            "questionNumber":2,
+            "question":"What is your hometown?",
+            "answer":"Chennai",
+            "answerOptions":[
+                "Chennai",
+                "Gotham",
+                "New York"
+            ]
+        }
+    ]
+}

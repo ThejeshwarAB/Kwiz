@@ -1,0 +1,16 @@
+*{
+    font-family: 'Karla',sans-serif;
+}
+
+.sub-title{
+    text-decoration: underline;
+}
+
+.card p{
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.card input label{
+    text-align: left;
+}
