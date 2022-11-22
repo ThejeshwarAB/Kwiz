@@ -19,6 +19,16 @@
                 "Gotham",
                 "New York"
             ]
+        },
+        {
+            "questionNumber":2,
+            "question":"What is your hometown?",
+            "answer":"Chennai",
+            "answerOptions":[
+                "Chennai",
+                "Gotham",
+                "New York"
+            ]
         }
     ]
 }
