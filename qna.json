@@ -1,33 +1,193 @@
 {
     "qna":[
         {
-            "questionNumber":1,
-            "question":"What is your name?",
-            "answer":"Thej",
+            "questionNumber":"q1",
+            "question":"What is the pH value of H2O?",
+            "answer":"7",
             "answerOptions":[
-                "Thej",
-                "Batman",
-                "Bruce"
+                "4",
+                "7",
+                "6"
             ]
         },
         {
-            "questionNumber":2,
-            "question":"What is your hometown?",
-            "answer":"Chennai",
+            "questionNumber":"q2",
+            "question":"Acid turns blue litmus paper into which color?",
+            "answer":"Red",
             "answerOptions":[
-                "Chennai",
-                "Gotham",
-                "New York"
+                "Red",
+                "Green",
+                "Black"
             ]
         },
         {
-            "questionNumber":2,
-            "question":"What is your hometown?",
-            "answer":"Chennai",
+            "questionNumber":"q3",
+            "question":"Name the gland which is present above our kidneys?",
+            "answer":"Adrenal",
             "answerOptions":[
-                "Chennai",
-                "Gotham",
-                "New York"
+                "Salivary",
+                "Pituitary",
+                "Adrenal"
+            ]
+        },
+        {
+            "questionNumber":"q4",
+            "question":"What is the basic unit of our neural system?",
+            "answer":"Neuron",
+            "answerOptions":[
+                "Neuron",
+                "Nephron",
+                "Proton"
+            ]
+        },
+        {
+            "questionNumber":"q5",
+            "question":"What is the unit of wavelength?",
+            "answer":"Meter",
+            "answerOptions":[
+                "Diopter",
+                "Hertz",
+                "Meter"
+            ]
+        },
+        {
+            "questionNumber":"q6",
+            "question":"Name the metal which is most ductile?",
+            "answer":"Gold",
+            "answerOptions":[
+                "Gold",
+                "Platinum",
+                "Silver"
+            ]
+        },
+        {
+            "questionNumber":"q7",
+            "question":"Name the part of the eye on which image is formed?",
+            "answer":"Cornea",
+            "answerOptions":[
+                "Optic nerves",
+                "Cornea",
+                "Lens"
+            ]
+        },
+        {
+            "questionNumber":"q8",
+            "question":"Which device is used for measuring air pressure?",
+            "answer":"Barometer",
+            "answerOptions":[
+                "Ammeter",
+                "Barometer",
+                "Voltmeter"
+            ]
+        },
+        {
+            "questionNumber":"q9",
+            "question":"What is the S.I unit of resistance?",
+            "answer":"Ohm",
+            "answerOptions":[
+                "Volt",
+                "Ampere",
+                "Ohm"
+            ]
+        },
+        {
+            "questionNumber":"q11",
+            "question":"Name the process by which the human breathes?",
+            "answer":"Respiration",
+            "answerOptions":[
+                "Digestion",
+                "Respiration",
+                "Photosynthesis"
+            ]
+        },
+        {
+            "questionNumber":"q12",
+            "question":"Name the part of the human body in which most of the digestion occurs?",
+            "answer":"Small intestine",
+            "answerOptions":[
+                "Stomach",
+                "Small intestine",
+                "Large intestine"
+            ]
+        },
+        {
+            "questionNumber":"q13",
+            "question":"Name the metal which is easily cut by a simple knife?",
+            "answer":"Sodium",
+            "answerOptions":[
+                "Sodium",
+                "Mercury",
+                "Lead"
+            ]
+        },
+        {
+            "questionNumber":"q14",
+            "question":"Name the fabric which is used in making bulletproof jackets?",
+            "answer":"Kevlar",
+            "answerOptions":[
+                "Iron",
+                "Aluminium",
+                "Kevlar"
+            ]
+        },
+        {
+            "questionNumber":"q15",
+            "question":"What is the scientific name of a mango?",
+            "answer":"Mangifera indica",
+            "answerOptions":[
+                "Mangifera indica",
+                "Homo sapiens",
+                "Felis catus"
+            ]
+        },
+        {
+            "questionNumber":"q16",
+            "question":"Who is the main producer of our ecosystem?",
+            "answer":"Plants",
+            "answerOptions":[
+                "Bacteria",
+                "Humans",
+                "Plants"
+            ]
+        },
+        {
+            "questionNumber":"q17",
+            "question":"What is the symbol of gold?",
+            "answer":"Au",
+            "answerOptions":[
+                "Au",
+                "Hg",
+                "Ag"
+            ]
+        },
+        {
+            "questionNumber":"q18",
+            "question":"What is the symbol of gold?",
+            "answer":"Au",
+            "answerOptions":[
+                "Au",
+                "Hg",
+                "Ag"
+            ]
+        },
+        {
+            "questionNumber":"q19",
+            "question":"Which type of lens is used in microscope?",
+            "answer":"Convex",
+            "answerOptions":[
+                "Concave",
+                "Convex",
+                "Cylindrical"
+            ]
+        },
+        {
+            "questionNumber":"q20",
+            "question":"What is the color of SO2 gas?",
+            "answer":"Colorless",
+            "answerOptions":[
+                "Brown",
+                "Black",
+                "Colorless"
             ]
         }
     ]

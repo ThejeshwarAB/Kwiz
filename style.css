@@ -2,15 +2,30 @@
     font-family: 'Karla',sans-serif;
 }
 
-.sub-title{
+.title{
+    font-weight: 900;
     text-decoration: underline;
+}
+
+.card{
+    margin: 15px auto;
 }
 
 .card p{
     text-align: left;
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 .card input label{
-    text-align: left;
+    text-align: left !important;
+}
+
+.correct{
+    background-color: lightgreen !important;
+    /* color: green; */
+    /* border: 1px solid red; */
+}
+
+.incorrect{
+    background-color: tomato !important;
 }

@@ -1,8 +1,9 @@
 const form = document.querySelector('.form');
-const title = document.querySelector('.title');
+const result = document.querySelector('.result');
 
 var json = {};
 var qna = [];
+var score = 0;
 
 // gets the local json data
 async function getData(url) {
@@ -24,6 +25,7 @@ window.onload = async () => {
     // gets json data
     await getData('./qna.json');
     qna = json['qna'];
+    qna = qna.slice(0, 5);
 
     // tracking variables
     var templateString = '';
@@ -49,7 +51,7 @@ window.onload = async () => {
             isChecked = index === 0 ? 'checked' : ''
 
             tempString += `<div class='form-check'>
-                                <input class="form-check-input" type="radio" name="q${mainIndex}${tempNumber}" 
+                                <input class="form-check-input" type="radio" name="${tempNumber}" 
                                     id="${tempNumber}" value="${tempArray[randomNo]}" ${isChecked}>
                                 <label class="form-check-label" for="${tempArray[randomNo]}">
                                     ${tempArray[randomNo]}
@@ -62,7 +64,7 @@ window.onload = async () => {
         mainIndex++;
 
         templateString +=
-            `<div class='card p-3 m-3 col-6'>
+            `<div class='card p-3 col-md-8 col-sm-12'>
                 <p>${element["question"]}</p>
                 <div class="form-check">
                 ${tempString}
@@ -75,11 +77,32 @@ window.onload = async () => {
 
 form.addEventListener('submit', e => {
     e.preventDefault(); // prevents the page from reloading
-    console.log(form)
-    for (var index = 0; index < 3; index++) {
-        var tempName = 'q' + index.toString();
-        console.log(index)
-        console.log(form[tempName].value);
-        // if(form[tempName].value===)
-    }
+    score = 0;
+    const formElements = Array.from(e.target)
+    formElements.forEach(item => {
+        if (item.tagName == 'INPUT' &&
+            item.className == 'form-check-input' &&
+            item.checked == true) {
+
+            item.parentNode.parentNode.parentNode.classList.add('incorrect')
+
+            for (var index = 0; index < qna.length; index++) {
+                if (item['name'] === qna[index].questionNumber && item['value'] === qna[index].answer) {
+                    score++;
+                    // item.parentNode.parentNode.parentNode.classList.remove('incorrect')/
+                    item.parentNode.parentNode.parentNode.classList.add('correct')
+                    item.parentNode.parentNode.parentNode.classList.remove('incorrect')
+                    // break
+                    // console.log(item.className);
+                }
+                // else if(!item.parentNode.parentNode.parentNode.classList){
+                //     item.parentNode.parentNode.parentNode.classList.add('incorrect')
+                // }
+            }
+        }
+    })
+    scrollTo(0, 0); // scrolls to top of the screen
+    result.innerHTML = `<p class="text-center">You scored 
+                        <span class='fw-bold'> ${score / 5 * 100}% </span> <br>
+                        Review your selections</p>`;
 })
