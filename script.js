@@ -26,7 +26,6 @@ window.onload = async () => {
     // gets json data
     await getData('./qna.json');
     qna = json['qna'];
-    qna = qna.slice(0, 5);
 
     // tracking variables
     var templateString = '';
@@ -34,6 +33,8 @@ window.onload = async () => {
 
     // shuffles the qna everytime
     shuffleArray(qna);
+    qna = qna.slice(0, 5);
+
     // console.log(qna)
     
     // iterating through each elements
